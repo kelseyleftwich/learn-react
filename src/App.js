@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <ArtObject art={art[0]} featured />
-        <ArtObject art={art[1]} />
+        <ArtObject artObject={art[0]} featured />
+        <ArtObject artObject={art[1]} />
       </main>
       <Footer />
     </div>
