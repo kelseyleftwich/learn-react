@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import ArtObject from './components/ArtObject';
 import './App.css';
+import art from './art.json';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main>
+        <ArtObject art={art[0]} featured />
+        <ArtObject art={art[1]} />
+      </main>
+      <Footer />
     </div>
   );
 }
