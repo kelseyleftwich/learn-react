@@ -4,7 +4,18 @@
 }
 
 .App-header {
-  padding-bottom: 32px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ArtObject {
+  border-top: 4px double #ccc;
+  padding: 48px 0px;
 }
