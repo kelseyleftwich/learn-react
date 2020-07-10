@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <ArtObject art={art[0]} />
+        <ArtObject art={art[0]} featured />
         <ArtObject art={art[1]} />
       </main>
       <Footer />
