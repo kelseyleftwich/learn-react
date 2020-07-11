@@ -7,6 +7,20 @@
   margin-bottom: 64px;
 }
 
+.App-header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.App-header nav > a {
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.App-header nav > a:hover {
+  text-decoration: underline;
+}
+
 .App-footer {
   padding: 24px 0;
 }
