@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import types from '../types/propTypes';
 
-const ArtObject = ({ art, featured }) => {
-  const { imgSrc, title, objectNumber, people } = art;
+const ArtObject = ({ artObject, featured }) => {
+  const { imgSrc, title, objectNumber, people } = artObject;
   return (
     <article className="ArtObject">
       <figure>
@@ -28,12 +29,7 @@ const ArtObject = ({ art, featured }) => {
 };
 
 ArtObject.propTypes = {
-  art: PropTypes.shape({
-    imgSrc: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    objectNumber: PropTypes.string.isRequired,
-    people: PropTypes.arrayOf(PropTypes.string).isRequired,
-  }),
+  art: types.artObject.isRequired,
   featured: PropTypes.bool,
 };
 

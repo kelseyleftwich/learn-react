@@ -3,12 +3,14 @@
     "objectNumber": "1993.249",
     "title": "Six Legendary Chinese Sages in Landscapes",
     "people": ["Chŏng Yusŭng (also known as Ch'ui-ŭn)"],
-    "imgSrc": "https://ids.lib.harvard.edu/ids/view/17825238?width=800&height=800"
+    "imgSrc": "https://ids.lib.harvard.edu/ids/view/17825238?width=800&height=800",
+    "featured": true
   },
   {
     "objectNumber": "2008.4",
     "title": "Newcomb Vase",
     "people": ["Marie De Hoa LeBlanc"],
-    "imgSrc": "https://ids.lib.harvard.edu/ids/view/20430287?width=800&height=800"
+    "imgSrc": "https://ids.lib.harvard.edu/ids/view/20430287?width=800&height=800",
+    "featured": false
   }
 ]
