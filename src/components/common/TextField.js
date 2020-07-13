@@ -2,6 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TextField = ({ id, label, value, onChange, area, error }) => {
+  const ariaDescribedByAttribute = {
+    'aria-describedby': `${id}-description`,
+  };
+
+  // this is for screenreaders
+  const ariaLiveAttribute = {
+    'aria-live': 'assertive',
+  };
+
   return (
     <>
       <label htmlFor={id}>{label}</label>
@@ -19,6 +28,8 @@ const TextField = ({ id, label, value, onChange, area, error }) => {
             name={id}
             value={value}
             onChange={onChange}
+            {...(error ? ariaDescribedByAttribute : {})}
+            {...(error ? ariaLiveAttribute : {})}
           />
         ) : (
           <input
@@ -27,9 +38,19 @@ const TextField = ({ id, label, value, onChange, area, error }) => {
             name={id}
             value={value}
             onChange={onChange}
+            {...(error ? ariaDescribedByAttribute : {})}
+            {...(error ? ariaLiveAttribute : {})}
           />
         )}
-        {error && <small style={{ color: 'red' }}>{error}</small>}
+        {error && (
+          <small
+            id={`${id}-description`}
+            style={{ color: 'red' }}
+            aria-live="assertive"
+          >
+            {error}
+          </small>
+        )}
       </div>
     </>
   );
