@@ -29,7 +29,7 @@ const ArtObject = ({ artObject, featured }) => {
 };
 
 ArtObject.propTypes = {
-  art: types.artObject.isRequired,
+  artObject: types.artObject.isRequired,
   featured: PropTypes.bool,
 };
 
